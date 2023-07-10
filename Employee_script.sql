@@ -58,3 +58,6 @@ GO
 INSERT INTO [dbo].[Employees]([EmployeeID],[Name],[Surname], [Salary])
 VALUES (123475,'Sophia','Reed',2088)
 GO
+INSERT INTO [dbo].[Employees]([EmployeeID],[Name],[Surname], [Salary])
+VALUES (123476,'Maxo','Friedl',2948)
+GO
