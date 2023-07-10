@@ -6,7 +6,7 @@ department=["IT","BIO"]
 employeeID=123456
 for i in range(20):
     salary=randint(1000,5000)
-    print("INSERT INTO [dbo].[Employees]"+"([Employee ID],[Name],[Surname], [Salary])")
+    print("INSERT INTO [dbo].[Employees]"+"([EmployeeID],[Name],[Surname], [Salary])")
     print("VALUES"+" ("+str(employeeID)+","+"'"+firstname[i]+"'"+","+"'"+secondname[i]+"'"+","+str(salary)+")")
     print("GO")
     employeeID+=1
