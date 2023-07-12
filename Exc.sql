@@ -5,5 +5,6 @@ with EMPLOYEES_IT AS (select EmployeeID as DEP_EMP_id from [dbo].[Department-Emp
 
 EMPLOYEESofDEPARTMENT as (select EmployeeID as EMP_id from [dbo].[Employees])
 
-select * from EMPLOYEES_IT join EMPLOYEESofDEPARTMENT;
+select surname,name,EmployeeID from [dbo].[Employees] right join EMPLOYEES_IT on EMPLOYEES_IT.DEP_EMP_id=Employees.EmployeeID;
+--select * from EMPLOYEESofDEPARTMENT
 
