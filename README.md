@@ -1,4 +1,17 @@
 # SQL-final
+Vypracovanie nizsie spomenutych uloh. 
+Na vypracovanie som pouzil SSMS(SQL Server Management Studio): https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?redirectedfrom=MSDN&view=sql-server-ver15 
+Tabulky boli vypracovane s funkciami insert, ktore som si vygeneroval v pythone (napr employee_generator.py)+ tabulky boli vytvorene pomocou funkcie v SSMS- https://www.youtube.com/watch?v=eEbr9Cepons
+
+**5 tabuliek bolo vytvorenych:**
+1. Employees: **[EmployeeID-(int),surname-(nchar(50)),name-(nchar(50),salary-(int)]**, v tejto tabulke je zapisanych 21 zamestnancov- **Employee_script.sql**
+2. Deparments: **[DepartmentID-(int),names-(nchar(50))]**, v tabulke su zapisane 3 oddelenia (IT,BIO,CHE)- **Department_script.sql**
+3. Projects: **[ProjectID-(int),name-(nchar(50)),budget-(int)]**,v tabulke je zapisanych 6 projektov- **Project_script.sql**
+4. Department-Employee: **[DepartmentID,EmployeeID-(both int)]**, konbinacia oddeleni a zamestnancov- **Department-Employee_script.sql**
+5. Project-Employee: **[ProjectID,EmployeeID-(both int)]**, konbinacia projektov a zamestnanocv- **Project-Employee_script.sql**
+
+**Ulohy:**
+
 **Úloha 1: Vytvorenie databázy**
 
 Vytvorte novú SQL databázu s názvom "CompanyDB" obsahujúcu tabuľky pre zamestnancov, oddelenia a projekty.
