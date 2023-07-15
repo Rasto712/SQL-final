@@ -1,4 +1,4 @@
-# SQL-final
+# SQL-final-Rastislav Mintal
 Vypracovanie nizsie spomenutych uloh. 
 Na vypracovanie som pouzil SSMS(SQL Server Management Studio): https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?redirectedfrom=MSDN&view=sql-server-ver15 
 Tabulky boli vypracovane s funkciami insert, ktore som si vygeneroval v pythone (napr employee_generator.py)+ tabulky boli vytvorene pomocou funkcie v SSMS- https://www.youtube.com/watch?v=eEbr9Cepons
