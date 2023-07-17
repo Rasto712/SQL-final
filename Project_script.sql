@@ -45,3 +45,6 @@ INSERT INTO [dbo].[Projects]
            (6,'Kidney-study', 1000000)
 GO
 
+insert into Projects ([Project ID],name,budget)
+values (7,'car-repair(finished)',0)
+go
