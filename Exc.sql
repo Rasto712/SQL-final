@@ -10,9 +10,9 @@ select surname,name,EmployeeID from [dbo].[Employees] right join EMPLOYEES_IT on
 
 -- druha uloha 
 with 
-PRJ_EMP as (select Distinct ProjectID from [dbo].[Project-Employee] ),
-project as (select ProjectID as PRid, COUNT(EmployeeID) as NO_of_EMP from [dbo].[Project-Employee] where ProjectID<7 group by ProjectID)
-select * from [dbo].[Projects] right join project on project.PRid=Projects.[Project ID];
+PRJ as (select [Project ID],name from [dbo].[Projects] ),
+PRJ_EMP as (select ProjectID as PRid, COUNT(EmployeeID) as NO_of_EMP from [dbo].[Project-Employee]  group by ProjectID)
+select [Project ID], name, NO_of_EMP from PRJ left join PRJ_EMP on PRJ.[Project ID]=PRJ_EMP.PRid;
 
 -- tretia uloha
 
